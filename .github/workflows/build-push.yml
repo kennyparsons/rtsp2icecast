@@ -1,0 +1,21 @@
+name: publish
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish-rtsp2rsas:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build the rtsp2rsas image
+      run: |
+        echo $CR_PAT | docker login ghcr.io -u kennyparsons --password-stdin
+        docker build . --tag ghcr.io/kennyparsons/rtsp2rsas:latest
+        docker push ghcr.io/kennyparsons/rtsp2rsas:latest
+      env:
+        CR_PAT: ${{ secrets.CR_PAT }}
