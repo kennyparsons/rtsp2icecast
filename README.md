@@ -12,6 +12,8 @@ Below are the environmental variables available and their default value. Overrid
 |----------------------|:--------:|
 | `RTSP_URL`           | Yes      |
 | `ICECAST_URL`        | Yes      |
+| `ICECAST_PORT`       | Yes      |
+| `ICECAST_USERNAME`   | Yes      |
 | `ICECAST_PASSWORD`   | Yes      |
 | `ICECAST_MOUNTPOINT` | Yes      |
 | `FFMPEG_INPUT_OPTS`  |          |
