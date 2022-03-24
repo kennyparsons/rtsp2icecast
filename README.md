@@ -23,3 +23,4 @@ Below are the environmental variables available and their default value. Overrid
 1. Clone the repo
 2. Edit docker-compose.yaml (particularly the required variables)
 3. Launch the containers using `docker-compose up -d`
+4. Profit.
