@@ -1,8 +1,6 @@
-# rtsp2icecast
+# rtsp2rsas
 
-A simple Docker container to stream audio from an RTSP stream (eg. from an IP camera) to Icecast using FFmpeg. 
-
-Based on [rtsp2mjpg](https://github.com/eroji/rtsp2mjpg) by @eroji. 
+A simple Docker container to stream audio from an RTSP stream (eg. from an IP camera) to Rocket Streaming Audio Server using FFmpeg. 
 
 ### Environment Variables
 
